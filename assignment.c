@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int i,j,Vt=1, c=30, Vgs=2, Ids,Vds,diff;
+int j, Vt=1, c=30, Vgs=2, Ids, Vds;
 
 int main(){
 
