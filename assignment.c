@@ -1,8 +1,9 @@
 #include<stdio.h>
 
-int i,j, Vt=1, c, Vgs=2, Ids, Vds;
 
 int main(){
+
+int i,j, Vt=1, c, Vgs=2, Ids, Vds;
 
 printf("Press 1 for nMOS and press any key for pMOS\n");
 scanf("%d",&i);
@@ -19,12 +20,12 @@ for(j=0;j<4;j++){
         for( Vds=0;Vds<6;Vds++){
 
             if(Vds<(Vgs-Vt)){
-                Ids=c*(((Vgs-Vt)*Vds)-(Vds*Vds)/2);
+                Ids=c*(((Vgs-Vt)*Vds)-(pow(Vds,2)/2));
             }
 
-            else if(Vds>=(Vgs-Vt))
+            else
             {
-                Ids=c*((Vgs-Vt)*(Vgs-Vt))/2;
+                Ids=c*pow((Vgs-Vt),2)/2;
                 //printf("??");
 
             }
